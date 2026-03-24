@@ -1,0 +1,191 @@
+<div id="quiz3" style="font-family: Arial, sans-serif; background-color: #0d1b2a; border-radius: 12px; padding: 40px 44px; max-width: 860px; margin: 0 auto; color: #e8e8e8;">
+
+  <div style="display:flex; gap:8px; flex-wrap:wrap; margin-bottom:20px;">
+    <span style="font-size:11px; font-weight:700; letter-spacing:.12em; text-transform:uppercase; color:#c8d6e5; border:1px solid #2c4260; border-radius:50px; padding:5px 14px;">Educación Vial</span>
+    <span style="font-size:11px; font-weight:700; letter-spacing:.12em; text-transform:uppercase; color:#c8d6e5; border:1px solid #2c4260; border-radius:50px; padding:5px 14px;">Licencia Tipo E</span>
+    <span style="font-size:11px; font-weight:700; letter-spacing:.12em; text-transform:uppercase; color:#c8d6e5; border:1px solid #2c4260; border-radius:50px; padding:5px 14px;">Unidad 3</span>
+  </div>
+
+  <h2 style="font-family:Georgia,serif; font-size:36px; font-weight:700; color:#f0f0f0; margin:0 0 6px 0;">
+    Quiz — <em style="color:#e88c30; font-style:italic;">Conducción Eficiente</em>
+  </h2>
+  <p style="font-size:14px; color:#7a9ab8; margin:0 0 32px 0;">Unidad 3 · 6 preguntas · Autoaprendizaje</p>
+
+  <div style="background:#111f30; border-radius:50px; height:6px; margin-bottom:36px; border:1px solid #1e3452;">
+    <div id="q3-progress" style="background:#e88c30; border-radius:50px; height:100%; width:0%; transition:width .4s;"></div>
+  </div>
+
+  <!-- P1 -->
+  <div id="q3-p1" style="margin-bottom:32px;">
+    <p style="font-size:13px; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:#e88c30; margin:0 0 8px 0;">Pregunta 1 de 6 · Selección múltiple</p>
+    <table style="width:100%; border-collapse:collapse; margin-bottom:18px; background:#111f30; border:1px solid #1e3452; border-radius:10px; overflow:hidden;">
+      <tr>
+        <td style="padding:10px 14px; text-align:center; width:25%; border-right:1px solid #1e3452;">
+          <div style="font-size:11px; font-weight:700; color:#c0392b; text-transform:uppercase; margin-bottom:4px;">Bajo</div>
+          <div style="height:18px; background:#c0392b; border-radius:4px; opacity:.7;"></div>
+          <div style="font-size:11px; color:#c8d6e5; margin-top:4px;">&lt;1.200 RPM</div>
+        </td>
+        <td style="padding:10px 14px; text-align:center; width:25%; border-right:1px solid #1e3452; background:#0a2318;">
+          <div style="font-size:11px; font-weight:700; color:#27ae60; text-transform:uppercase; margin-bottom:4px;">ZONA VERDE ✔</div>
+          <div style="height:18px; background:#27ae60; border-radius:4px;"></div>
+          <div style="font-size:11px; color:#6fcf97; margin-top:4px;">1.200–1.600 RPM</div>
+        </td>
+        <td style="padding:10px 14px; text-align:center; width:25%; border-right:1px solid #1e3452;">
+          <div style="font-size:11px; font-weight:700; color:#e88c30; text-transform:uppercase; margin-bottom:4px;">Zona naranja</div>
+          <div style="height:18px; background:#e88c30; border-radius:4px; opacity:.7;"></div>
+          <div style="font-size:11px; color:#c8d6e5; margin-top:4px;">1.600–2.000 RPM</div>
+        </td>
+        <td style="padding:10px 14px; text-align:center; width:25%;">
+          <div style="font-size:11px; font-weight:700; color:#c0392b; text-transform:uppercase; margin-bottom:4px;">Excesivo</div>
+          <div style="height:18px; background:#c0392b; border-radius:4px; opacity:.7;"></div>
+          <div style="font-size:11px; color:#c8d6e5; margin-top:4px;">&gt;2.000 RPM</div>
+        </td>
+      </tr>
+    </table>
+    <p style="font-size:17px; font-weight:600; color:#f0f0f0; margin:0 0 20px 0;">¿En qué rango de RPM se encuentra la <strong style="color:#27ae60;">zona verde</strong> de los motores diésel de transporte pesado?</p>
+    <div id="q3-p1-opts" style="display:flex; flex-direction:column; gap:10px;">
+      <button onclick="q3Check(this,'p1',false)" style="background:#111f30; border:1px solid #1e3452; border-radius:8px; color:#c8d6e5; font-size:15px; padding:14px 18px; text-align:left; cursor:pointer;">A) 800 – 1.200 RPM</button>
+      <button onclick="q3Check(this,'p1',true)"  style="background:#111f30; border:1px solid #1e3452; border-radius:8px; color:#c8d6e5; font-size:15px; padding:14px 18px; text-align:left; cursor:pointer;">B) 1.200 – 1.600 RPM</button>
+      <button onclick="q3Check(this,'p1',false)" style="background:#111f30; border:1px solid #1e3452; border-radius:8px; color:#c8d6e5; font-size:15px; padding:14px 18px; text-align:left; cursor:pointer;">C) 1.800 – 2.200 RPM</button>
+      <button onclick="q3Check(this,'p1',false)" style="background:#111f30; border:1px solid #1e3452; border-radius:8px; color:#c8d6e5; font-size:15px; padding:14px 18px; text-align:left; cursor:pointer;">D) 2.500 – 3.000 RPM</button>
+    </div>
+    <div id="q3-p1-fb" style="display:none; margin-top:14px; background:#0f1e2e; border-left:4px solid #2a6496; border-radius:0 8px 8px 0; padding:14px 18px; font-size:14px; color:#8fafc8;">
+      ✅ <strong style="color:#dce8f2;">Correcto.</strong> La zona verde es <strong style="color:#27ae60;">1.200–1.600 RPM</strong>. Operar en este rango reduce el consumo hasta un 15% y minimiza el desgaste del motor.
+    </div>
+    <div id="q3-p1-wrong" style="display:none; margin-top:14px; background:#1a0f0f; border-left:4px solid #c0392b; border-radius:0 8px 8px 0; padding:14px 18px; font-size:14px; color:#e8a0a0;">
+      ❌ <strong style="color:#f5c0c0;">Incorrecto.</strong> La respuesta correcta es <strong>B) 1.200–1.600 RPM</strong>.
+    </div>
+  </div>
+
+  <!-- P2 -->
+  <div id="q3-p2" style="margin-bottom:32px; padding-top:28px; border-top:1px solid #1e3452;">
+    <p style="font-size:13px; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:#e88c30; margin:0 0 8px 0;">Pregunta 2 de 6 · Verdadero o Falso</p>
+    <p style="font-size:17px; font-weight:600; color:#f0f0f0; margin:0 0 20px 0;">La conducción eficiente implica necesariamente conducir más despacio y llegar tarde a las entregas.</p>
+    <div style="display:flex; gap:12px;">
+      <button onclick="q3Check(this,'p2',false)" style="flex:1; background:#111f30; border:1px solid #1e3452; border-radius:8px; color:#c8d6e5; font-size:16px; font-weight:700; padding:16px; cursor:pointer;">✔ VERDADERO</button>
+      <button onclick="q3Check(this,'p2',true)"  style="flex:1; background:#111f30; border:1px solid #1e3452; border-radius:8px; color:#c8d6e5; font-size:16px; font-weight:700; padding:16px; cursor:pointer;">✘ FALSO</button>
+    </div>
+    <div id="q3-p2-fb" style="display:none; margin-top:14px; background:#0f1e2e; border-left:4px solid #2a6496; border-radius:0 8px 8px 0; padding:14px 18px; font-size:14px; color:#8fafc8;">
+      ✅ <strong style="color:#dce8f2;">Falso.</strong> La conducción eficiente <strong style="color:#e88c30;">no implica ir más despacio ni llegar tarde</strong>. Significa conducir con inteligencia: anticipar, planificar y mantener velocidad constante.
+    </div>
+    <div id="q3-p2-wrong" style="display:none; margin-top:14px; background:#1a0f0f; border-left:4px solid #c0392b; border-radius:0 8px 8px 0; padding:14px 18px; font-size:14px; color:#e8a0a0;">
+      ❌ <strong style="color:#f5c0c0;">Incorrecto.</strong> La afirmación es <strong>FALSA</strong>. Conducir eficientemente es conducir con inteligencia, no más despacio.
+    </div>
+  </div>
+
+  <!-- P3 -->
+  <div id="q3-p3" style="margin-bottom:32px; padding-top:28px; border-top:1px solid #1e3452;">
+    <p style="font-size:13px; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:#e88c30; margin:0 0 8px 0;">Pregunta 3 de 6 · Caso práctico</p>
+    <div style="background:#0f1e2e; border-left:4px solid #e88c30; border-radius:0 8px 8px 0; padding:14px 18px; margin-bottom:18px;">
+      <p style="font-size:14px; color:#b0bec5; margin:0; line-height:1.6;"><strong style="color:#e88c30;">Situación:</strong> Miguel va a 80 km/h y a 300 metros ve un semáforo en rojo. Quiere aplicar la conducción eficiente.</p>
+    </div>
+    <p style="font-size:17px; font-weight:600; color:#f0f0f0; margin:0 0 20px 0;">¿Cuál es la acción correcta?</p>
+    <div id="q3-p3-opts" style="display:flex; flex-direction:column; gap:10px;">
+      <button onclick="q3Check(this,'p3',false)" style="background:#111f30; border:1px solid #1e3452; border-radius:8px; color:#c8d6e5; font-size:15px; padding:14px 18px; text-align:left; cursor:pointer;">A) Mantener el acelerador y frenar fuerte al acercarse</button>
+      <button onclick="q3Check(this,'p3',true)"  style="background:#111f30; border:1px solid #1e3452; border-radius:8px; color:#c8d6e5; font-size:15px; padding:14px 18px; text-align:left; cursor:pointer;">B) Levantar el pie del acelerador y dejar rodar el vehículo por inercia</button>
+      <button onclick="q3Check(this,'p3',false)" style="background:#111f30; border:1px solid #1e3452; border-radius:8px; color:#c8d6e5; font-size:15px; padding:14px 18px; text-align:left; cursor:pointer;">C) Acelerar para cruzar antes de que cambie a rojo</button>
+      <button onclick="q3Check(this,'p3',false)" style="background:#111f30; border:1px solid #1e3452; border-radius:8px; color:#c8d6e5; font-size:15px; padding:14px 18px; text-align:left; cursor:pointer;">D) Reducir velocidad pero mantener el acelerador pisado</button>
+    </div>
+    <div id="q3-p3-fb" style="display:none; margin-top:14px; background:#0f1e2e; border-left:4px solid #2a6496; border-radius:0 8px 8px 0; padding:14px 18px; font-size:14px; color:#8fafc8;">
+      ✅ <strong style="color:#dce8f2;">Correcto.</strong> Técnica de <strong style="color:#e88c30;">anticipación y rodamiento libre</strong>: al levantar el pie del acelerador, el motor diésel deja de inyectar combustible (consumo = 0), ahorrando combustible y reduciendo desgaste de frenos.
+    </div>
+    <div id="q3-p3-wrong" style="display:none; margin-top:14px; background:#1a0f0f; border-left:4px solid #c0392b; border-radius:0 8px 8px 0; padding:14px 18px; font-size:14px; color:#e8a0a0;">
+      ❌ <strong style="color:#f5c0c0;">Incorrecto.</strong> La respuesta correcta es <strong>B)</strong>. Al soltar el acelerador el consumo de combustible cae a cero en un motor diésel.
+    </div>
+  </div>
+
+  <!-- P4 -->
+  <div id="q3-p4" style="margin-bottom:32px; padding-top:28px; border-top:1px solid #1e3452;">
+    <p style="font-size:13px; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:#e88c30; margin:0 0 8px 0;">Pregunta 4 de 6 · Selección múltiple</p>
+    <p style="font-size:17px; font-weight:600; color:#f0f0f0; margin:0 0 20px 0;">Según el compendio, la conducción eficiente puede reducir el consumo de combustible hasta en un:</p>
+    <div id="q3-p4-opts" style="display:flex; flex-direction:column; gap:10px;">
+      <button onclick="q3Check(this,'p4',false)" style="background:#111f30; border:1px solid #1e3452; border-radius:8px; color:#c8d6e5; font-size:15px; padding:14px 18px; text-align:left; cursor:pointer;">A) 10%</button>
+      <button onclick="q3Check(this,'p4',false)" style="background:#111f30; border:1px solid #1e3452; border-radius:8px; color:#c8d6e5; font-size:15px; padding:14px 18px; text-align:left; cursor:pointer;">B) 15%</button>
+      <button onclick="q3Check(this,'p4',true)"  style="background:#111f30; border:1px solid #1e3452; border-radius:8px; color:#c8d6e5; font-size:15px; padding:14px 18px; text-align:left; cursor:pointer;">C) 30%</button>
+      <button onclick="q3Check(this,'p4',false)" style="background:#111f30; border:1px solid #1e3452; border-radius:8px; color:#c8d6e5; font-size:15px; padding:14px 18px; text-align:left; cursor:pointer;">D) 50%</button>
+    </div>
+    <div id="q3-p4-fb" style="display:none; margin-top:14px; background:#0f1e2e; border-left:4px solid #2a6496; border-radius:0 8px 8px 0; padding:14px 18px; font-size:14px; color:#8fafc8;">
+      ✅ <strong style="color:#dce8f2;">Correcto.</strong> La conducción eficiente puede reducir el consumo entre un <strong style="color:#e88c30;">10% y un 30%</strong>, además de reducir el uso de frenos en ~30% y disminuir emisiones de CO₂.
+    </div>
+    <div id="q3-p4-wrong" style="display:none; margin-top:14px; background:#1a0f0f; border-left:4px solid #c0392b; border-radius:0 8px 8px 0; padding:14px 18px; font-size:14px; color:#e8a0a0;">
+      ❌ <strong style="color:#f5c0c0;">Incorrecto.</strong> La respuesta correcta es <strong>C) 30%</strong> como máximo según el compendio.
+    </div>
+  </div>
+
+  <!-- P5 -->
+  <div id="q3-p5" style="margin-bottom:32px; padding-top:28px; border-top:1px solid #1e3452;">
+    <p style="font-size:13px; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:#e88c30; margin:0 0 8px 0;">Pregunta 5 de 6 · Verdadero o Falso</p>
+    <p style="font-size:17px; font-weight:600; color:#f0f0f0; margin:0 0 20px 0;">En un motor diésel, antes de emprender la marcha se recomienda esperar entre 30 y 60 segundos para que el aceite lubrique todos los componentes del motor.</p>
+    <div style="display:flex; gap:12px;">
+      <button onclick="q3Check(this,'p5',true)"  style="flex:1; background:#111f30; border:1px solid #1e3452; border-radius:8px; color:#c8d6e5; font-size:16px; font-weight:700; padding:16px; cursor:pointer;">✔ VERDADERO</button>
+      <button onclick="q3Check(this,'p5',false)" style="flex:1; background:#111f30; border:1px solid #1e3452; border-radius:8px; color:#c8d6e5; font-size:16px; font-weight:700; padding:16px; cursor:pointer;">✘ FALSO</button>
+    </div>
+    <div id="q3-p5-fb" style="display:none; margin-top:14px; background:#0f1e2e; border-left:4px solid #2a6496; border-radius:0 8px 8px 0; padding:14px 18px; font-size:14px; color:#8fafc8;">
+      ✅ <strong style="color:#dce8f2;">Verdadero.</strong> El arranque correcto en motores diésel exige esperar <strong style="color:#e88c30;">30–60 segundos</strong> y evitar aceleraciones bruscas hasta alcanzar la temperatura óptima de operación.
+    </div>
+    <div id="q3-p5-wrong" style="display:none; margin-top:14px; background:#1a0f0f; border-left:4px solid #c0392b; border-radius:0 8px 8px 0; padding:14px 18px; font-size:14px; color:#e8a0a0;">
+      ❌ <strong style="color:#f5c0c0;">Incorrecto.</strong> La afirmación es <strong>VERDADERA</strong>. Esperar 30–60 segundos es el arranque correcto para un motor diésel.
+    </div>
+  </div>
+
+  <!-- P6 -->
+  <div id="q3-p6" style="margin-bottom:36px; padding-top:28px; border-top:1px solid #1e3452;">
+    <p style="font-size:13px; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:#e88c30; margin:0 0 8px 0;">Pregunta 6 de 6 · Identifica el concepto</p>
+    <p style="font-size:17px; font-weight:600; color:#f0f0f0; margin:0 0 20px 0;">Manejar el acelerador con suavidad y progresividad, sin pisadas bruscas, se conoce en conducción eficiente como:</p>
+    <div id="q3-p6-opts" style="display:flex; flex-direction:column; gap:10px;">
+      <button onclick="q3Check(this,'p6',false)" style="background:#111f30; border:1px solid #1e3452; border-radius:8px; color:#c8d6e5; font-size:15px; padding:14px 18px; text-align:left; cursor:pointer;">A) Freno motor</button>
+      <button onclick="q3Check(this,'p6',false)" style="background:#111f30; border:1px solid #1e3452; border-radius:8px; color:#c8d6e5; font-size:15px; padding:14px 18px; text-align:left; cursor:pointer;">B) Rodamiento libre</button>
+      <button onclick="q3Check(this,'p6',false)" style="background:#111f30; border:1px solid #1e3452; border-radius:8px; color:#c8d6e5; font-size:15px; padding:14px 18px; text-align:left; cursor:pointer;">C) Arranque frío</button>
+      <button onclick="q3Check(this,'p6',true)"  style="background:#111f30; border:1px solid #1e3452; border-radius:8px; color:#c8d6e5; font-size:15px; padding:14px 18px; text-align:left; cursor:pointer;">D) Pie de pluma</button>
+    </div>
+    <div id="q3-p6-fb" style="display:none; margin-top:14px; background:#0f1e2e; border-left:4px solid #2a6496; border-radius:0 8px 8px 0; padding:14px 18px; font-size:14px; color:#8fafc8;">
+      ✅ <strong style="color:#dce8f2;">Correcto.</strong> <strong style="color:#e88c30;">"Pie de pluma"</strong> describe la técnica de aceleración suave y progresiva. Cada aceleración brusca puede incrementar el consumo hasta un <strong style="color:#e88c30;">40%</strong> en ese instante.
+    </div>
+    <div id="q3-p6-wrong" style="display:none; margin-top:14px; background:#1a0f0f; border-left:4px solid #c0392b; border-radius:0 8px 8px 0; padding:14px 18px; font-size:14px; color:#e8a0a0;">
+      ❌ <strong style="color:#f5c0c0;">Incorrecto.</strong> La respuesta correcta es <strong>D) Pie de pluma</strong> — aceleración suave y progresiva para máxima eficiencia.
+    </div>
+  </div>
+
+  <!-- Resultado final -->
+  <div id="q3-result" style="display:none; background:#111f30; border:1px solid #1e3452; border-radius:12px; padding:28px 32px; text-align:center;">
+    <p style="font-size:13px; font-weight:700; letter-spacing:.15em; text-transform:uppercase; color:#5a7a9a; margin:0 0 8px 0;">Resultado Final</p>
+    <p id="q3-score-text" style="font-size:42px; font-weight:700; color:#e88c30; margin:0 0 8px 0;"></p>
+    <p id="q3-score-msg"  style="font-size:15px; color:#b0bec5; margin:0 0 24px 0;"></p>
+    <button onclick="q3Reset()" style="background:#e88c30; border:none; border-radius:8px; color:#0d1b2a; font-size:14px; font-weight:700; padding:12px 28px; cursor:pointer; letter-spacing:.06em;">↺ REINTENTAR QUIZ</button>
+  </div>
+
+</div>
+
+<script>
+(function(){
+  var score=0,answered=0,total=6;
+  window.q3Check=function(btn,id,correct){
+    var opts=document.getElementById('q3-'+id+'-opts');
+    if(!opts){btn.parentElement.querySelectorAll('button').forEach(function(b){b.disabled=true;b.style.opacity='.6';b.style.cursor='default';});}
+    else{opts.querySelectorAll('button').forEach(function(b){b.disabled=true;b.style.opacity='.6';b.style.cursor='default';});}
+    if(correct){btn.style.borderColor='#27ae60';btn.style.backgroundColor='#0a2318';btn.style.color='#6fcf97';document.getElementById('q3-'+id+'-fb').style.display='block';score++;}
+    else{btn.style.borderColor='#c0392b';btn.style.backgroundColor='#1a0f0f';btn.style.color='#e87070';document.getElementById('q3-'+id+'-wrong').style.display='block';}
+    answered++;
+    document.getElementById('q3-progress').style.width=Math.round(answered/total*100)+'%';
+    if(answered===total){setTimeout(function(){
+      document.getElementById('q3-result').style.display='block';
+      var pct=Math.round(score/total*100);
+      document.getElementById('q3-score-text').textContent=score+' / '+total+' ('+pct+'%)';
+      document.getElementById('q3-score-msg').textContent=pct===100?'🏆 ¡Perfecto! Dominas la Conducción Eficiente y Racional.':pct>=67?'👍 Buen trabajo. Repasa los puntos donde tuviste errores.':'📚 Necesitas reforzar esta unidad. ¡Inténtalo de nuevo!';
+      document.getElementById('q3-result').scrollIntoView({behavior:'smooth'});
+    },600);}
+  };
+  window.q3Reset=function(){
+    score=0;answered=0;
+    document.getElementById('q3-progress').style.width='0%';
+    document.getElementById('q3-result').style.display='none';
+    ['p1','p2','p3','p4','p5','p6'].forEach(function(id){
+      var fb=document.getElementById('q3-'+id+'-fb'),wr=document.getElementById('q3-'+id+'-wrong');
+      if(fb)fb.style.display='none';if(wr)wr.style.display='none';
+      var opts=document.getElementById('q3-'+id+'-opts');
+      if(opts){opts.querySelectorAll('button').forEach(function(b){b.disabled=false;b.style.opacity='1';b.style.cursor='pointer';b.style.borderColor='#1e3452';b.style.backgroundColor='#111f30';b.style.color='#c8d6e5';});}
+      else{var sec=document.getElementById('q3-'+id);if(sec)sec.querySelectorAll('button').forEach(function(b){b.disabled=false;b.style.opacity='1';b.style.cursor='pointer';b.style.borderColor='#1e3452';b.style.backgroundColor='#111f30';b.style.color='#c8d6e5';});}
+    });
+  };
+})();
+</script>
